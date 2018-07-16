@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddShop"
+    android:background="@drawable/mainbackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbarSL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="@string/setAppointment"
+         />
+
+    <ImageButton
+        android:id="@+id/CallButton"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbarSL"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateIds" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/AddText"
+                android:layout_width="276dp"
+                android:layout_height="59dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/SL_Add"
+                android:inputType="text"
+                android:focusedByDefault="false"/>
+
+            <ImageButton
+                android:id="@+id/AddButton"
+                android:layout_width="90dp"
+                android:layout_height="59dp"
+                android:layout_alignTop="@+id/AddText"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/AddText"
+                android:layout_toRightOf="@+id/AddText"
+                android:background="@drawable/buttonshape"
+                android:focusedByDefault="true"
+                android:src="@drawable/ic_add_shopping_cart" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="24dp"
+            android:choiceMode="multipleChoice">
+
+
+        </ListView>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/checked"
+            android:background="@drawable/buttonshape"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>
